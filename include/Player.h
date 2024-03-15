@@ -1,20 +1,23 @@
 #ifndef PLAYER_H
 #define PLAYER_H
+#include "Charkter.h"
 #include <string>
-#include <iostream>
 
-class Player
+class Player : public Charkter
 {
     public:
-        Player(std::string name);
+        Player(std::string name, std::string ability1, std::string ability2, int ability1Damage ,int ability2Damage);
         virtual ~Player();
-        virtual std::string toString() const = 0;
+        std::string toString() const override;
 
     protected:
-        std::string name;
-        int health;
 
     private:
+        std::string ability1;
+        std::string ability2;
+        int ability1Damage;
+        int ability2Damage;
+
 };
 
 #endif // PLAYER_H

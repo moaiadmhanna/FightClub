@@ -1,22 +1,39 @@
 # depslib dependency file v1.0
-1710485014 source:d:\fh technikum\c++\fightclub\main.cpp
+1710524476 source:d:\fh technikum\c++\fightclub\main.cpp
 	<iostream>
 	<Player.h>
-	<charckter.h>
+	<Charkter.h>
+	"drawer.h"
 
-1710485440 d:\fh technikum\c++\fightclub\include\player.h
-	<string>
-	<iostream>
-
-1710485014 d:\fh technikum\c++\fightclub\include\charckter.h
-	"Player.h"
+1710524442 d:\fh technikum\c++\fightclub\include\player.h
+	"Charkter.h"
 	<string>
 
-1710485014 source:d:\fh technikum\c++\fightclub\src\charckter.cpp
+1710524078 d:\fh technikum\c++\fightclub\include\charckter.h
+	"Charkter.h"
+	<string>
+
+1710513950 source:d:\fh technikum\c++\fightclub\src\charckter.cpp
 	<iostream>
+	<string>
 	"charckter.h"
-	<string>
 
-1710485446 source:d:\fh technikum\c++\fightclub\src\player.cpp
+1710524581 source:d:\fh technikum\c++\fightclub\src\player.cpp
+	<iostream>
+	<string>
 	"Player.h"
+
+1710522395 d:\fh technikum\c++\fightclub\include\drawer.h
+
+1710524443 d:\fh technikum\c++\fightclub\include\charkter.h
+	<string>
+	<iostream>
+
+1710522584 source:d:\fh technikum\c++\fightclub\src\drawer.cpp
+	<iostream>
+	"drawer.h"
+	<windows.h>
+
+1710524448 source:d:\fh technikum\c++\fightclub\src\charkter.cpp
+	"Charkter.h"
 

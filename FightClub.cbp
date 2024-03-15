@@ -34,12 +34,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Charkter.h" />
+		<Unit filename="include/CharkterFabrik.h" />
 		<Unit filename="include/Player.h" />
-		<Unit filename="include/charckter.h" />
-		<Unit filename="include/playerFabrik.h" />
+		<Unit filename="include/defualts.h" />
+		<Unit filename="include/drawer.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Charkter.cpp" />
+		<Unit filename="src/CharkterFabrik.cpp" />
 		<Unit filename="src/Player.cpp" />
-		<Unit filename="src/charckter.cpp" />
+		<Unit filename="src/drawer.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
