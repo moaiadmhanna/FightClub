@@ -1,8 +1,9 @@
 #include "Player.h"
 
-Player::Player()
+Player::Player(std::string name)
 {
-    //ctor
+    this->name = name;
+    this->health = 100;
 }
 
 Player::~Player()

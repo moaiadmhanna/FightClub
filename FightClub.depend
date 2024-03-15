@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1710485014 source:d:\fh technikum\c++\fightclub\main.cpp
+	<iostream>
+	<Player.h>
+	<charckter.h>
+
+1710485440 d:\fh technikum\c++\fightclub\include\player.h
+	<string>
+	<iostream>
+
+1710485014 d:\fh technikum\c++\fightclub\include\charckter.h
+	"Player.h"
+	<string>
+
+1710485014 source:d:\fh technikum\c++\fightclub\src\charckter.cpp
+	<iostream>
+	"charckter.h"
+	<string>
+
+1710485446 source:d:\fh technikum\c++\fightclub\src\player.cpp
+	"Player.h"
+
