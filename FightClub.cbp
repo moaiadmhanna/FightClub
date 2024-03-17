@@ -43,6 +43,7 @@
 		<Unit filename="src/Charkter.cpp" />
 		<Unit filename="src/CharkterFabrik.cpp" />
 		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/defualts.cpp" />
 		<Unit filename="src/drawer.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
