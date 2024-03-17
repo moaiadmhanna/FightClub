@@ -22,10 +22,8 @@ enum charkterType
     //PlasmaBarrage Unleashes a barrage of plasma blasts, dealing 40 damage to enemies and reducing their accuracy by 10.
     //PlasmaShield Erects a formidable plasma shield, significantly boosting the shield strength by 100.
 };
-
 const std::string tanksNames[] = {"ThunderTank","FrostguardTank","StormbreakerTank","EarthwardenTank","PlasmaTank"};
 const std::string abilitiesNames[] = {"Shockwave","Energize","FrostNova","FrostSurge","TempestStrike","ShieldCharge","TectonicSlam","NatureRenewal","PlasmaBarrage","PlasmaShield"};
-
 enum abilities
 {
     Shockwave,
@@ -39,7 +37,6 @@ enum abilities
     PlasmaBarrage,
     PlasmaShield,
 };
-
 void getAbilityInfo(std::string ability);
 charkterType tanksnameConvertor(std::string tankName);
 abilities abilityConvertor(std::string ability);

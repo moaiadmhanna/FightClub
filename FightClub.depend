@@ -1,10 +1,19 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1710710849 source:d:\fh technikum\c++\fightclub\main.cpp
 	<iostream>
 	<Player.h>
 	<Charkter.h>
 	<drawer.h>
 	<CharkterFabrik.h>
+=======
+1710669636 source:d:\fh technikum\c++\fightclub\main.cpp
+	<iostream>
+	<Player.h>
+	<Charkter.h>
+	"drawer.h"
+	"CharkterFabrik.h"
+>>>>>>> 708b66e7f0c6f7b476e09733b621fe7af1e13fda
 	<time.h>
 
 1710666320 d:\fh technikum\c++\fightclub\include\player.h
@@ -20,34 +29,54 @@
 	<string>
 	"charckter.h"
 
+<<<<<<< HEAD
 1710709544 source:d:\fh technikum\c++\fightclub\src\player.cpp
+=======
+1710666318 source:d:\fh technikum\c++\fightclub\src\player.cpp
+>>>>>>> 708b66e7f0c6f7b476e09733b621fe7af1e13fda
 	<iostream>
 	<string>
 	"Player.h"
 	"defualts.h"
 
+<<<<<<< HEAD
 1710710862 d:\fh technikum\c++\fightclub\include\drawer.h
 	<iostream>
 	<windows.h>
 	"Player.h"
 	"defualts.h"
+=======
+1710670832 d:\fh technikum\c++\fightclub\include\drawer.h
+	<iostream>
+	<windows.h>
+	"Player.h"
+>>>>>>> 708b66e7f0c6f7b476e09733b621fe7af1e13fda
 
 1710664884 d:\fh technikum\c++\fightclub\include\charkter.h
 	<string>
 	<iostream>
 
+<<<<<<< HEAD
 1710711192 source:d:\fh technikum\c++\fightclub\src\drawer.cpp
+=======
+1710670545 source:d:\fh technikum\c++\fightclub\src\drawer.cpp
+>>>>>>> 708b66e7f0c6f7b476e09733b621fe7af1e13fda
 	<iostream>
 	"drawer.h"
 	<windows.h>
 
+<<<<<<< HEAD
 1710711061 source:d:\fh technikum\c++\fightclub\src\charkter.cpp
+=======
+1710666877 source:d:\fh technikum\c++\fightclub\src\charkter.cpp
+>>>>>>> 708b66e7f0c6f7b476e09733b621fe7af1e13fda
 	"Charkter.h"
 	<windows.h>
 
 1710669589 source:d:\fh technikum\c++\fightclub\src\charkterfabrik.cpp
 	"CharkterFabrik.h"
 
+<<<<<<< HEAD
 1710704646 d:\fh technikum\c++\fightclub\include\charkterfabrik.h
 	"Charkter.h"
 	"Player.h"
@@ -59,4 +88,13 @@
 
 1710709056 source:d:\fh technikum\c++\fightclub\src\defualts.cpp
 	"defualts.h"
+=======
+1710668988 d:\fh technikum\c++\fightclub\include\charkterfabrik.h
+	"defualts.h"
+	"Charkter.h"
+	"Player.h"
+
+1710669552 d:\fh technikum\c++\fightclub\include\defualts.h
+	<string>
+>>>>>>> 708b66e7f0c6f7b476e09733b621fe7af1e13fda
 

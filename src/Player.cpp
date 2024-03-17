@@ -2,6 +2,7 @@
 #include <string>
 #include "Player.h"
 #include "defualts.h"
+
 using namespace std;
 
 Player::Player(std::string name, std::string ability1, std::string ability2):Charkter(name)

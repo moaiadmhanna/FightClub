@@ -4,7 +4,7 @@
 Charkter::Charkter(std::string name)
 {
     this->name = name;
-    this->health = 10;
+    this->health = 100;
     this->accuracy = 50;
     this->shield = 20;
 

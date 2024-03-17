@@ -3,7 +3,6 @@
 #include "Charkter.h"
 #include "Player.h"
 #include "defualts.h"
-;
 class CharkterFabrik
 {
     public:
