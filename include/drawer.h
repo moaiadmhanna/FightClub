@@ -3,7 +3,7 @@
 #include "Player.h"
 #include "defualts.h"
 
-void tanksDrawer(Player* player1, Player* player2);
-void tanksDrawerFiringAbility(char direction, abilities type);
+void tanksDrawer(Charkter* charkters[], int NumberOFPlayers);
+void tanksDrawerFiringAbility(abilities type,Charkter* charkter1, Charkter* charkter2);
 void startScreen();
 void gameOverScreen();
