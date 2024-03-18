@@ -7,7 +7,21 @@ Charkter::Charkter(std::string name)
     this->health = 100;
     this->accuracy = 50;
     this->shield = 20;
+    this->human = true;
+    this->wins = 0;
+    this->loses = 0;
 
+}
+Charkter::Charkter()
+{
+    std::string botName = "BOT" +  std::to_string(rand()%1000);
+    this->name = botName;
+    this->health = 100;
+    this->accuracy = 50;
+    this->shield = 20;
+    this->human = false;
+    this->wins = 0;
+    this->loses = 0;
 }
 
 Charkter::~Charkter()
@@ -58,5 +72,11 @@ void Charkter::takesDamage(int damage, int accuracy){
     }
     std::cout << "The Tank took damage" << std::endl;
     Sleep(1500);
+}
+
+void Charkter::attributesRestarter(){
+    this->health = 100;
+    this->accuracy = 50;
+    this->shield = 20;
 }
 

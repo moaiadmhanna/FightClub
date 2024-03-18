@@ -74,3 +74,65 @@ abilities abilityConvertor(std::string ability){
         return PlasmaShield;
     }
 }
+
+void attackMove(Charkter* player , std::string ability , Charkter* opponent){
+    if (ability.compare("Shockwave") == 0)
+    {
+        if(opponent->accuracyGetter()> 20){
+            opponent->accuracySetter(opponent->accuracyGetter() - 10);
+        }
+        opponent->takesDamage(30,player->accuracyGetter());
+    }
+    else if (ability.compare("Energize")== 0)
+    {
+        player->shieldSetter(player->shieldGetter()+10);
+        if(player->accuracyGetter() + 20 < 100)
+        {
+         player->accuracySetter(player->accuracyGetter()+20);
+        }
+        else
+        {
+            player->accuracySetter(100);
+        }
+    }
+    else if (ability.compare("FrostNova") == 0)
+    {
+        opponent->takesDamage(40,player->accuracyGetter());
+        player->healthSetter(player->healthGetter()+10);
+    }
+    else if (ability.compare("FrostSurge") == 0)
+    {
+        player->shieldSetter(player->shieldGetter() + 20);
+    }
+    else if (ability.compare("TempestStrike") == 0)
+    {
+        int shieldOfOpponent = opponent->shieldGetter();
+        opponent->shieldSetter(0);
+        opponent->takesDamage(20,player->accuracyGetter());
+        opponent->shieldSetter(shieldOfOpponent);
+    }
+    else if (ability.compare("ShieldCharge") == 0)
+    {
+        player->shieldSetter(player->shieldGetter() + 30);
+    }
+    else if (ability.compare("TectonicSlam") == 0)
+    {
+        opponent->takesDamage(30,100);
+    }
+    else if (ability.compare("NatureRenewal") == 0)
+    {
+        player->healthSetter(player->healthGetter()+ 20);
+        player->shieldSetter(player->shieldGetter() + 10);
+    }
+    else if (ability.compare("PlasmaBarrage") == 0)
+    {
+        opponent->takesDamage(40, player->accuracyGetter());
+        if(opponent->accuracyGetter() > 20){
+            opponent->accuracySetter(opponent->accuracyGetter() - 10);
+        }
+    }
+    else if (ability.compare("PlasmaShield") == 0)
+    {
+       player->shieldSetter(player->shieldGetter() + 100);
+    };
+}

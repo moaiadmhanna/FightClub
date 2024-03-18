@@ -2,6 +2,7 @@
 #define NUMBER_OF_ABILITIES 10
 #include <string>
 #include <iostream>
+#include <Charkter.h>
 #pragma once
 
 enum charkterType
@@ -40,3 +41,4 @@ enum abilities
 void getAbilityInfo(std::string ability);
 charkterType tanksnameConvertor(std::string tankName);
 abilities abilityConvertor(std::string ability);
+void attackMove(Charkter* player, std::string ability, Charkter* opponent);

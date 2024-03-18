@@ -8,12 +8,10 @@ class Player : public Charkter
     public:
         Player(std::string name, std::string ability1, std::string ability2);
         virtual ~Player();
-        std::string toString() const override;
-        void getAbilitiesInfo() const;
-        void attackMove(std::string ability,Charkter* opponent);
+        void getAbilitiesInfo() const override;
         Player* clone() const;
-        std::string ability1Getter() const;
-        std::string ability2Getter() const;
+        std::string ability1Getter() const override;
+        std::string ability2Getter() const override;
 
 
     protected:
