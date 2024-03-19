@@ -177,11 +177,11 @@ bool round(Charkter* characters[], int numberOfPlayers, bool teams) {
         tanksDrawer(characters, numberOfPlayers);
         if (teams) {
             for (int i = 0; i < 2; i++) {
-                tanksDrawer(characters, numberOfPlayers);
+                tanksDrawer(characters, numberOfPlayers,teams);
                 teamsPrinter(team1, team2);
                 int team1Choose = (team1[i]->human == false) ? 1 + rand() % 2 : getInput(team1[i]);
                 playerAbilityUse(team1[i], team2[team1Choose - 1]);
-                tanksDrawer(characters, numberOfPlayers);
+                tanksDrawer(characters, numberOfPlayers,teams);
                 teamsPrinter(team1, team2);
                 if (!healthChecker(characters, numberOfPlayers)) {
                     team1[i]->wins++;
@@ -215,6 +215,11 @@ void charcktersAttributeRestarter(Charkter* charkters[], int numberofPlayers){
         charkters[i]->attributesRestarter();
     }
 }
+void deleteAllCharkters(Charkter* charkters[],int numberOfPlayers){
+    for(int i = 0; i < numberOfPlayers ; i++){
+        delete charkters[i];
+    }
+}
 int main()
 {
     srand(time(0));
@@ -235,6 +240,8 @@ int main()
                 if(input == 'y' || input == 'n'){break;}
             }
             if(input == 'n'){
+                playersFabrik->~CharkterFabrik();
+                deleteAllCharkters(charkters,NumberOfPlayers);
                 gameOverScreen();
                 return 0;
             }

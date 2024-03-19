@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 3 <<<<<<< HEAD
 
-1710755327 source:d:\fh technikum\c++\fightclub\main.cpp
+1710821290 source:d:\fh technikum\c++\fightclub\main.cpp
 	<iostream>
 	<Player.h>
 	<Charkter.h>
@@ -45,7 +45,7 @@
 	"Player.h"
 	"defualts.h"
 
-1710748094 d:\fh technikum\c++\fightclub\include\drawer.h
+1710821307 d:\fh technikum\c++\fightclub\include\drawer.h
 	<iostream>
 	<windows.h>
 	"Player.h"
@@ -57,12 +57,12 @@
 	<string>
 	<iostream>
 
-1710755594 source:d:\fh technikum\c++\fightclub\src\drawer.cpp
+1710821462 source:d:\fh technikum\c++\fightclub\src\drawer.cpp
 	<iostream>
 	"drawer.h"
 	<windows.h>
 
-1710754209 source:d:\fh technikum\c++\fightclub\src\charkter.cpp
+1710755668 source:d:\fh technikum\c++\fightclub\src\charkter.cpp
 	"Charkter.h"
 	<windows.h>
 

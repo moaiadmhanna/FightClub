@@ -3,9 +3,53 @@
 #include <windows.h>
 
 using namespace std;
-void tanksDrawer(Charkter* charkters[], int NumberOFPlayers){
+void tanksDrawer(Charkter* charkters[], int NumberOFPlayers, bool teams){
     system("cls");
     int counter = 0;
+    if(teams == true){
+        counter = 2;
+        for(int i = 0; i < NumberOFPlayers/2 ; i++){
+        cout << "    .--._____,                                              `_____.--.     " << endl;
+        cout << "  .-='=='==-, \"                                           \" `-=='=='==.  " << endl;
+        cout << " (O_o_o_o_o_O)                                               (O_o_o_o_o_O) " << endl;
+        cout << endl;
+        cout << charkters[i]->nameGetter();
+        cout.width(60);
+        cout << charkters[i+counter]->nameGetter() << "   ";
+        cout << endl;
+        cout << endl;
+        cout << "HP:";
+        cout << charkters[i]->healthGetter();
+        cout.width(55);
+        cout << "HP:" ;
+        cout << charkters[i+counter]->healthGetter();
+        cout << "   ";
+        cout << endl;
+        cout << "Shield:" << charkters[i]->shieldGetter();
+        cout.width(56);
+        cout << "Shield:" << charkters[i+counter]->shieldGetter() << "   ";
+        cout << endl;
+        cout << "Accuracy:" << charkters[i]->accuracyGetter();
+        cout.width(56);
+        cout << "Accuracy:" << charkters[i+counter]->accuracyGetter() << "   ";
+        cout << endl;
+        cout << "Ability1: " << charkters[i]->ability1Getter();
+        cout << " Ability2: " << charkters[i]->ability2Getter();
+        cout.width(20);
+        cout << "Ability1: " << charkters[i+counter]->ability1Getter();
+        cout << " Ability2: " << charkters[i+counter]->ability2Getter();
+        cout << endl;
+        cout << "Wins:" << charkters[i]->wins;
+        cout.width(56);
+        cout << "Wins:" << charkters[i+counter]->wins << "   ";
+        cout << endl;
+        cout << "Loses:" << charkters[i]->loses;
+        cout.width(56);
+        cout << "Loses:" << charkters[i+counter]->loses << "   ";
+        cout << endl;
+    }
+    return;
+    }
     for(int i = 0; i < NumberOFPlayers/2 ; i++){
         cout << "    .--._____,                                              `_____.--.     " << endl;
         cout << "  .-='=='==-, \"                                           \" `-=='=='==.  " << endl;
@@ -51,13 +95,14 @@ void tanksDrawer(Charkter* charkters[], int NumberOFPlayers){
 
 void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* charkter2){
     if(type%2 == 0){
+        system("cls");
         cout << "   " << charkter1->nameGetter();
         cout << "                                    " << charkter2->nameGetter() << endl;
         cout << endl;
          cout << "    .--._____,                                             `_____.--.     " << endl;
          cout << "  .-='=='==-, \"   0                                      \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                              (O_o_o_o_o_O) " << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
          cout << "   " << charkter1->nameGetter();
          cout << "                                    " << charkter2->nameGetter() << endl;
@@ -65,7 +110,7 @@ void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* char
          cout << "    .--._____,                                             `_____.--.     " << endl;
          cout << "  .-='=='==-, \"        0                                 \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                              (O_o_o_o_o_O) " << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
          cout << "   " << charkter1->nameGetter();
          cout << "                                    " << charkter2->nameGetter() << endl;
@@ -73,7 +118,7 @@ void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* char
          cout << "    .--._____,                                             `_____.--.     " << endl;
          cout << "  .-='=='==-, \"                0                         \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                              (O_o_o_o_o_O) " << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
          cout << "   " << charkter1->nameGetter();
          cout << "                                    " << charkter2->nameGetter() << endl;
@@ -81,7 +126,7 @@ void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* char
          cout << "    .--._____,                                             `_____.--.     " << endl;
          cout << "  .-='=='==-, \"                          0               \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                              (O_o_o_o_o_O) " << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
          cout << "   " << charkter1->nameGetter();
          cout << "                                    " << charkter2->nameGetter() << endl;
@@ -89,7 +134,7 @@ void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* char
          cout << "    .--._____,                                             `_____.--.     " << endl;
          cout << "  .-='=='==-, \"                                  0       \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                              (O_o_o_o_o_O) " << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
          cout << "   " << charkter1->nameGetter();
          cout << "                                    " << charkter2->nameGetter() << endl;
@@ -97,7 +142,7 @@ void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* char
          cout << "    .--._____,                                             `_____.--.     " << endl;
          cout << "  .-='=='==-, \"                                      0   \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                              (O_o_o_o_o_O) " << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
          cout << "   " << charkter1->nameGetter();
          cout << "                                    " << charkter2->nameGetter() << endl;
@@ -106,7 +151,7 @@ void tanksDrawerFiringAbility(abilities type, Charkter* charkter1,Charkter* char
          cout << "  .-='=='==-, \"                                           \" `-=='=='==.  " << endl;
          cout << " (O_o_o_o_o_O)                                               (O_o_o_o_o_O) " << endl;
          cout << endl;
-         Sleep(500);
+         Sleep(300);
          system("cls");
     }
 }
